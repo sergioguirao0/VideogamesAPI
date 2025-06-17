@@ -1,2 +1,38 @@
 ﻿/.idea/config/applicationhost.config
 /VideogamesAPI.sln.DotSettings.user
+
+# Build folders
+bin/
+obj/
+
+# Rider files
+.idea/
+*.sln.iml
+
+# User-specific files
+*.user
+*.suo
+*.userprefs
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment configs
+.env
+*.secret.json
+secrets.json
+
+# App settings (local)
+appsettings.Development.json
+appsettings.Local.json
+
+# EF Core tools
+migrations/
+
+# PostgreSQL dumps (if any)
+*.sql
+*.dump

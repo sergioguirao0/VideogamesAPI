@@ -9,14 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa7bdb20-853d-476f-9a23-75774e46b74e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/VideogamesAPI/Model/Repositories/IDeveloperRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VideogamesAPI/Services/DeveloperService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.VideogamesAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VideogamesAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VideogamesAPI/Controllers/DevelopersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VideogamesAPI/Controllers/DevelopersController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VideogamesAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VideogamesAPI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VideogamesAPI/VideogamesAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/VideogamesAPI/VideogamesAPI.csproj" afterDir="false" />
-    </list>
+    <list default="true" id="aa7bdb20-853d-476f-9a23-75774e46b74e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +36,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/294078ecfce6fdb942ecfee089f09717de7a6fcfe5efd9fdb6f4f93c0fb4813/ActionMethodExecutor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/394cf11a64687141fd58fb926ff8b3d5a299eba3bbadaf2de9b93928d523d4/Type.CoreCLR.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Sergio/RiderProjects/VideogamesAPI/VideogamesAPI/Controllers/DevelopersController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Sergio/RiderProjects/VideogamesAPI/VideogamesAPI/Controllers/DevelopersController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/VideogamesAPI/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -54,28 +49,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.VideogamesAPI: IIS Express.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Inspections-IDEA",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.VideogamesAPI: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.32119516&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Inspections-IDEA&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.VideogamesAPI: IIS Express">
     <configuration name="VideogamesAPI: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/VideogamesAPI/VideogamesAPI.csproj" />
@@ -135,7 +131,7 @@
       <workItem from="1750107092994" duration="7001000" />
       <workItem from="1750140985930" duration="51000" />
       <workItem from="1750150728263" duration="87000" />
-      <workItem from="1750183425881" duration="4931000" />
+      <workItem from="1750183425881" duration="5087000" />
     </task>
     <task id="LOCAL-00001" summary="Configuración del proyecto">
       <option name="closed" value="true" />
@@ -145,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750114480236</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Crud developers">
+      <option name="closed" value="true" />
+      <created>1750188916768</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1750188916768</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +160,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Configuración del proyecto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configuración del proyecto" />
+    <MESSAGE value="Crud developers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Crud developers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
