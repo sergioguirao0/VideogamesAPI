@@ -3,15 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.53">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <Grants>1||-9223372036854775808|c|G
-1||10|c|G
-1||10|C|G
-1||10|T|G
-4||-9223372036854775808|c|G
-4||10|c|G
-4||10|C|G
-4||10|T|G
-16389||-9223372036854775808|c|G
+      <Grants>16389||-9223372036854775808|c|G
 16389||10|c|G
 16389||16388|c|G
 16389||10|C|G
@@ -19,7 +11,7 @@
 16389||-9223372036854775808|T|G
 16389||10|T|G
 16389||16388|T|G</Grants>
-      <IntrospectionStateNumber>756</IntrospectionStateNumber>
+      <IntrospectionStateNumber>770</IntrospectionStateNumber>
       <ServerVersion>17.5</ServerVersion>
       <StartupTime>1750099702</StartupTime>
       <TimeZones>true ACDT
@@ -824,7 +816,7 @@ false Zulu
 14751||10|C|G
 14751||-9223372036854775808|U|G
 14751||10|U|G</Grants>
-      <IntrospectionStateNumber>756</IntrospectionStateNumber>
+      <IntrospectionStateNumber>770</IntrospectionStateNumber>
       <ObjectId>16389</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4250,8 +4242,8 @@ false Zulu
     <schema id="266" parent="3" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>756</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2025-06-16.22:33:49</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>770</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2025-06-18.18:57:25</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>753</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
@@ -4264,19 +4256,47 @@ false Zulu
       <StoredType>integer|0s</StoredType>
       <OwnerName>sergio</OwnerName>
     </sequence>
-    <table id="268" parent="266" name="Developers">
+    <sequence id="268" parent="266" name="Games_Id_seq">
+      <ObjectId>16411</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>769</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <OwnerName>sergio</OwnerName>
+    </sequence>
+    <sequence id="269" parent="266" name="Platforms_Id_seq">
+      <ObjectId>16403</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>769</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <OwnerName>sergio</OwnerName>
+    </sequence>
+    <table id="270" parent="266" name="Developers">
       <ObjectId>16396</ObjectId>
-      <StateNumber>755</StateNumber>
+      <StateNumber>769</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>sergio</OwnerName>
     </table>
-    <table id="269" parent="266" name="__EFMigrationsHistory">
+    <table id="271" parent="266" name="Games">
+      <ObjectId>16412</ObjectId>
+      <StateNumber>769</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>sergio</OwnerName>
+    </table>
+    <table id="272" parent="266" name="Platforms">
+      <ObjectId>16404</ObjectId>
+      <StateNumber>769</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>sergio</OwnerName>
+    </table>
+    <table id="273" parent="266" name="__EFMigrationsHistory">
       <ObjectId>16390</ObjectId>
       <StateNumber>754</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>sergio</OwnerName>
     </table>
-    <column id="270" parent="268" name="Id">
+    <column id="274" parent="270" name="Id">
       <IdentityKind>by-default</IdentityKind>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -4285,21 +4305,21 @@ false Zulu
       <SequenceId>16395</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="271" parent="268" name="Name">
+    <column id="275" parent="270" name="Name">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>755</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="272" parent="268" name="Country">
+    <column id="276" parent="270" name="Country">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>755</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <index id="273" parent="268" name="PK_Developers">
+    <index id="277" parent="270" name="PK_Developers">
       <ColNames>Id</ColNames>
       <ObjectId>16401</ObjectId>
       <Primary>1</Primary>
@@ -4307,27 +4327,150 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="274" parent="268" name="PK_Developers">
+    <key id="278" parent="270" name="PK_Developers">
       <ObjectId>16402</ObjectId>
       <Primary>1</Primary>
       <StateNumber>755</StateNumber>
       <UnderlyingIndexId>16401</UnderlyingIndexId>
     </key>
-    <column id="275" parent="269" name="MigrationId">
+    <column id="279" parent="271" name="Id">
+      <IdentityKind>by-default</IdentityKind>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>769</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <SequenceId>16411</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="280" parent="271" name="Name">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>769</StateNumber>
+      <StoredType>text|0s</StoredType>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="281" parent="271" name="ReleaseYear">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>769</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="282" parent="271" name="DeveloperId">
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>769</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="283" parent="271" name="PlatformId">
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>769</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <TypeId>23</TypeId>
+    </column>
+    <foreign-key id="284" parent="271" name="FK_Games_Developers_DeveloperId">
+      <ColNames>DeveloperId</ColNames>
+      <ObjectId>16419</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <StateNumber>769</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16396</RefTableId>
+    </foreign-key>
+    <foreign-key id="285" parent="271" name="FK_Games_Platforms_PlatformId">
+      <ColNames>PlatformId</ColNames>
+      <ObjectId>16424</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <StateNumber>769</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16404</RefTableId>
+    </foreign-key>
+    <index id="286" parent="271" name="PK_Games">
+      <ColNames>Id</ColNames>
+      <ObjectId>16417</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>769</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <index id="287" parent="271" name="IX_Games_DeveloperId">
+      <ColNames>DeveloperId</ColNames>
+      <ObjectId>16429</ObjectId>
+      <StateNumber>769</StateNumber>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <index id="288" parent="271" name="IX_Games_PlatformId">
+      <ColNames>PlatformId</ColNames>
+      <ObjectId>16430</ObjectId>
+      <StateNumber>769</StateNumber>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="289" parent="271" name="PK_Games">
+      <ObjectId>16418</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>769</StateNumber>
+      <UnderlyingIndexId>16417</UnderlyingIndexId>
+    </key>
+    <column id="290" parent="272" name="Id">
+      <IdentityKind>by-default</IdentityKind>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>769</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <SequenceId>16403</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="291" parent="272" name="Name">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>769</StateNumber>
+      <StoredType>text|0s</StoredType>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="292" parent="272" name="ReleaseYear">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>769</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="293" parent="272" name="GameId">
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>769</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="294" parent="272" name="PK_Platforms">
+      <ColNames>Id</ColNames>
+      <ObjectId>16409</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>769</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="295" parent="272" name="PK_Platforms">
+      <ObjectId>16410</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>769</StateNumber>
+      <UnderlyingIndexId>16409</UnderlyingIndexId>
+    </key>
+    <column id="296" parent="273" name="MigrationId">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>754</StateNumber>
       <StoredType>varchar(150)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="276" parent="269" name="ProductVersion">
+    <column id="297" parent="273" name="ProductVersion">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>754</StateNumber>
       <StoredType>varchar(32)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <index id="277" parent="269" name="PK___EFMigrationsHistory">
+    <index id="298" parent="273" name="PK___EFMigrationsHistory">
       <ColNames>MigrationId</ColNames>
       <ObjectId>16393</ObjectId>
       <Primary>1</Primary>
@@ -4338,7 +4481,7 @@ false Zulu
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="278" parent="269" name="PK___EFMigrationsHistory">
+    <key id="299" parent="273" name="PK___EFMigrationsHistory">
       <ObjectId>16394</ObjectId>
       <Primary>1</Primary>
       <StateNumber>754</StateNumber>
