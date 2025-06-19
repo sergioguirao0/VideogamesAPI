@@ -4435,14 +4435,7 @@ false Zulu
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <column id="293" parent="272" name="GameId">
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-      <StateNumber>769</StateNumber>
-      <StoredType>integer|0s</StoredType>
-      <TypeId>23</TypeId>
-    </column>
-    <index id="294" parent="272" name="PK_Platforms">
+    <index id="293" parent="272" name="PK_Platforms">
       <ColNames>Id</ColNames>
       <ObjectId>16409</ObjectId>
       <Primary>1</Primary>
@@ -4450,27 +4443,27 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="295" parent="272" name="PK_Platforms">
+    <key id="294" parent="272" name="PK_Platforms">
       <ObjectId>16410</ObjectId>
       <Primary>1</Primary>
       <StateNumber>769</StateNumber>
       <UnderlyingIndexId>16409</UnderlyingIndexId>
     </key>
-    <column id="296" parent="273" name="MigrationId">
+    <column id="295" parent="273" name="MigrationId">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>754</StateNumber>
       <StoredType>varchar(150)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="297" parent="273" name="ProductVersion">
+    <column id="296" parent="273" name="ProductVersion">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>754</StateNumber>
       <StoredType>varchar(32)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <index id="298" parent="273" name="PK___EFMigrationsHistory">
+    <index id="297" parent="273" name="PK___EFMigrationsHistory">
       <ColNames>MigrationId</ColNames>
       <ObjectId>16393</ObjectId>
       <Primary>1</Primary>
@@ -4481,7 +4474,7 @@ false Zulu
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="299" parent="273" name="PK___EFMigrationsHistory">
+    <key id="298" parent="273" name="PK___EFMigrationsHistory">
       <ObjectId>16394</ObjectId>
       <Primary>1</Primary>
       <StateNumber>754</StateNumber>
